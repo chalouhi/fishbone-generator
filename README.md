@@ -35,6 +35,11 @@ JSON (or the same content as XML). The smallest one:
 
 Everything else — children, before or after go-live, phases, side items, links, your own stages and colours — is in the **[file-format guide](docs/file-format.md)**. The five files in [`samples/`](samples/) show each feature.
 
+## Learn more
+
+- **[Using the Fishbone Generator](docs/guide.md)** — the demo page, the command (options, exit codes), the script for your own page (what `Fishbone.draw` returns), what the picture and the PDF hold, and how the drawing wraps and fits the width.
+- **[File-format guide](docs/file-format.md)** — how to write the file.
+
 ## What is in this repository
 
 | Folder | |
@@ -42,7 +47,7 @@ Everything else — children, before or after go-live, phases, side items, links
 | `src/` | The tool: `fishbone.js` (reader, drawing, picture, page view) and `pdf.js` (the PDF). |
 | `bin/` | The command. |
 | `index.html`, `demo/` | The demo page. |
-| `docs/` | The file-format guide. |
+| `docs/` | The user guide and the file-format guide. |
 | `samples/`, `expected/` | The five sample files and the pictures and messages they must produce. |
 | `reference/` | Pictures of three real fishbones frozen from the drawing this tool replaces, and the data they were made from (card numbers only). From 768 points wide up, the tool must draw them exactly. |
 | `vendor/`, `fonts/` | pdf-lib and fontkit (MIT) and the Carlito font (SIL OFL 1.1), kept here so nothing needs a network. |

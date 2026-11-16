@@ -70,7 +70,7 @@ test('the demo page data is up to date with samples/ and fonts/', () => {
 
 test('the repository holds what requirement 31 lists, under the MIT licence', () => {
   assert.match(read('LICENSE'), /^MIT License/);
-  for (const f of ['docs/file-format.md', 'reference/reference-data.json', 'README.md', 'src/fishbone.js', 'bin/fishbone.js', 'index.html']) assert.ok(fs.existsSync(path.join(ROOT, f)), f);
+  for (const f of ['docs/file-format.md', 'docs/guide.md', 'reference/reference-data.json', 'README.md', 'src/fishbone.js', 'bin/fishbone.js', 'index.html']) assert.ok(fs.existsSync(path.join(ROOT, f)), f);
   assert.equal(fs.readdirSync(path.join(ROOT, 'samples')).length, 5);
   assert.equal(fs.readdirSync(path.join(ROOT, 'expected')).length, 7);
   const refs = fs.readdirSync(path.join(ROOT, 'reference'));
