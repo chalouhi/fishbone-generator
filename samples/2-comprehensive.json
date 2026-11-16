@@ -1,0 +1,166 @@
+{
+  "fishbone": 1,
+  "title": "Customer portal",
+  "phases": [
+    {
+      "name": "Pilot",
+      "golive": "Pilot live",
+      "status": "live",
+      "steps": [
+        {
+          "id": "P1",
+          "name": "Sign-in page",
+          "stage": "Live",
+          "link": "https://example.com/cards/P1",
+          "children": [
+            {
+              "id": "P1a",
+              "name": "Password reset",
+              "stage": "Live",
+              "before_golive": true
+            },
+            {
+              "id": "P1b",
+              "name": "Remember this device",
+              "stage": "Live",
+              "before_golive": false
+            }
+          ]
+        },
+        {
+          "id": "P2",
+          "name": "Account summary",
+          "stage": "Live"
+        },
+        {
+          "id": "P3",
+          "name": "Pilot with 20 customers",
+          "stage": "Live"
+        }
+      ]
+    },
+    {
+      "name": "Launch",
+      "golive": "Open to all",
+      "status": "active",
+      "steps": [
+        {
+          "id": "L1",
+          "name": "Statements download",
+          "stage": "Live",
+          "children": [
+            {
+              "id": "L1a",
+              "name": "PDF layout",
+              "stage": "Live",
+              "before_golive": true,
+              "children": [
+                {
+                  "id": "L1b",
+                  "name": "Arabic layout",
+                  "stage": "Live",
+                  "children": [
+                    {
+                      "id": "L1c",
+                      "name": "Right-to-left tables",
+                      "stage": "To do",
+                      "children": [
+                        {
+                          "id": "L1d",
+                          "name": "Number alignment",
+                          "stage": "To do"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "L2",
+          "name": "Payments",
+          "stage": "Live"
+        },
+        {
+          "id": "L3",
+          "name": "Security review",
+          "stage": "Building",
+          "link": "https://example.com/cards/L3",
+          "children": [
+            {
+              "id": "L3a",
+              "name": "Penetration test",
+              "stage": "Building",
+              "before_golive": true
+            },
+            {
+              "id": "L3b",
+              "name": "Fix findings",
+              "stage": "To do",
+              "before_golive": true
+            },
+            {
+              "id": "L3c",
+              "name": "Security page on the website",
+              "stage": "To do",
+              "before_golive": false
+            },
+            {
+              "id": "L3d",
+              "name": "Staff training note",
+              "stage": "To do"
+            }
+          ]
+        },
+        {
+          "id": "L4",
+          "name": "Help pages",
+          "stage": "To do"
+        },
+        {
+          "id": "L5",
+          "name": "Switch on for everyone",
+          "stage": "To do"
+        }
+      ]
+    },
+    {
+      "name": "Growth",
+      "golive": "Mobile app",
+      "status": "active",
+      "steps": [
+        {
+          "id": "G1",
+          "name": "Mobile design",
+          "stage": "To do"
+        },
+        {
+          "id": "G2",
+          "name": "Build the app",
+          "stage": "To do"
+        }
+      ]
+    }
+  ],
+  "side": [
+    {
+      "id": "S1",
+      "name": "Dark colours",
+      "stage": "To do",
+      "children": [
+        {
+          "id": "S1a",
+          "name": "Logo for dark background",
+          "stage": "Live"
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "name": "Old browser support",
+      "stage": "Live"
+    }
+  ]
+}

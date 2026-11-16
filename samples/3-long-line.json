@@ -1,0 +1,200 @@
+{
+  "fishbone": 1,
+  "title": "House renovation",
+  "golive": "Moved in",
+  "link_pattern": "https://example.com/cards/{id}",
+  "steps": [
+    {
+      "id": "1",
+      "name": "Survey",
+      "stage": "Live"
+    },
+    {
+      "id": "2",
+      "name": "Plan",
+      "stage": "Live"
+    },
+    {
+      "id": "3",
+      "name": "Budget",
+      "stage": "Live",
+      "children": [
+        {
+          "id": "3a",
+          "name": "Contingency",
+          "stage": "Live",
+          "before_golive": true
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Approve",
+      "stage": "Live"
+    },
+    {
+      "id": "5",
+      "name": "Tender",
+      "stage": "Live"
+    },
+    {
+      "id": "6",
+      "name": "Award",
+      "stage": "Live"
+    },
+    {
+      "id": "7",
+      "name": "Mobilise",
+      "stage": "Live"
+    },
+    {
+      "id": "8",
+      "name": "Clear site",
+      "stage": "Live"
+    },
+    {
+      "id": "9",
+      "name": "Foundations",
+      "stage": "Live",
+      "children": [
+        {
+          "id": "9a",
+          "name": "Soil test",
+          "stage": "Live",
+          "before_golive": true
+        },
+        {
+          "id": "9b",
+          "name": "Drain survey",
+          "stage": "Live",
+          "before_golive": false
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Frame",
+      "stage": "Live"
+    },
+    {
+      "id": "11",
+      "name": "Roof",
+      "stage": "Live"
+    },
+    {
+      "id": "12",
+      "name": "Windows",
+      "stage": "Live"
+    },
+    {
+      "id": "13",
+      "name": "Wiring",
+      "stage": "Live",
+      "children": [
+        {
+          "id": "13a",
+          "name": "Board upgrade",
+          "stage": "Live",
+          "before_golive": true
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "name": "Plumbing",
+      "stage": "Live"
+    },
+    {
+      "id": "15",
+      "name": "Insulation",
+      "stage": "Live"
+    },
+    {
+      "id": "16",
+      "name": "Plaster",
+      "stage": "Live"
+    },
+    {
+      "id": "17",
+      "name": "Floors",
+      "stage": "Live"
+    },
+    {
+      "id": "18",
+      "name": "Kitchen",
+      "stage": "Building"
+    },
+    {
+      "id": "19",
+      "name": "Bathrooms",
+      "stage": "Building",
+      "children": [
+        {
+          "id": "19a",
+          "name": "Tile choice",
+          "stage": "Building",
+          "before_golive": true
+        },
+        {
+          "id": "19b",
+          "name": "Mirror order",
+          "stage": "To do",
+          "before_golive": false
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "name": "Paint",
+      "stage": "To do"
+    },
+    {
+      "id": "21",
+      "name": "Doors",
+      "stage": "To do"
+    },
+    {
+      "id": "22",
+      "name": "Lighting",
+      "stage": "To do"
+    },
+    {
+      "id": "23",
+      "name": "Heating test",
+      "stage": "To do"
+    },
+    {
+      "id": "24",
+      "name": "Snag list",
+      "stage": "To do",
+      "children": [
+        {
+          "id": "24a",
+          "name": "Garden",
+          "stage": "To do",
+          "before_golive": false
+        }
+      ]
+    },
+    {
+      "id": "25",
+      "name": "Clean",
+      "stage": "To do"
+    },
+    {
+      "id": "26",
+      "name": "Inspect",
+      "stage": "To do"
+    },
+    {
+      "id": "27",
+      "name": "Hand over",
+      "stage": "To do"
+    },
+    {
+      "id": "28",
+      "name": "Move in",
+      "stage": "To do"
+    }
+  ]
+}

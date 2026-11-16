@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The page may load its own files and nothing else; it can send nothing anywhere (requirement 21). -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Fishbone Generator</title>
+<link rel="icon" href="demo/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="demo/page.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Fishbone Generator</h1>
+    <p class="sub">Give it one plan file. It draws the fishbone: the steps in order on a line that ends in the goal, with the work found along the way hanging off each step. Your file never leaves this browser.</p>
+  </div>
+</header>
+<main class="wrap">
+  <section class="input" aria-label="Give a file">
+    <div id="drop" class="drop" tabindex="0">
+      <strong>Drop a file here</strong> or <label class="pick">choose one<input id="file" type="file" accept=".json,.xml,application/json,application/xml,text/xml,text/plain"></label>
+      <span class="hint">JSON or XML, as described in the <a id="guide" href="https://github.com/chalouhi/fishbone-generator/blob/main/docs/file-format.md" target="_blank" rel="noopener noreferrer">file-format guide</a>.</span>
+    </div>
+    <details id="pastebox">
+      <summary>Or paste the file's text</summary>
+      <textarea id="paste" spellcheck="false" placeholder='{"fishbone": 1, "title": "…", "golive": "…", "steps": [ … ]}'></textarea>
+      <button id="drawpaste" class="btn" type="button">Draw</button>
+    </details>
+    <div class="samples"><span>Try a sample:</span> <span id="samples"></span></div>
+  </section>
+  <div class="tools">
+    <button id="dl-svg" class="btn" type="button" disabled>Download picture</button>
+    <button id="dl-pdf" class="btn" type="button" disabled>Download PDF</button>
+    <span id="status" class="status" role="status"></span>
+  </div>
+  <div id="out" class="out"></div>
+</main>
+<footer class="wrap">
+  <p>Three ways to use it: this page; the command <code>fishbone &lt;file&gt; --svg out.svg --pdf out.pdf</code>; or include <code>src/fishbone.js</code> in your own page and call <code>Fishbone.draw(place, text)</code>. MIT licence. <a href="https://github.com/chalouhi/fishbone-generator" target="_blank" rel="noopener noreferrer">Source</a>.</p>
+</footer>
+<script src="src/fishbone.js"></script>
+<script src="vendor/pdf-lib.min.js"></script>
+<script src="vendor/fontkit.umd.min.js"></script>
+<script src="src/pdf.js"></script>
+<script src="demo/samples.js"></script>
+<script src="demo/fonts.js"></script>
+<script src="demo/app.js"></script>
+</body>
+</html>

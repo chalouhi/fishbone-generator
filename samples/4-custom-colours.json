@@ -1,0 +1,79 @@
+{
+  "fishbone": 1,
+  "title": "Product launch",
+  "golive": "Launch day",
+  "style": {
+    "stages": [
+      {
+        "name": "Blocked",
+        "fill": "#FCEBEB",
+        "edge": "#A32D2D",
+        "ink": "#791F1F",
+        "counts_as_live": false
+      },
+      {
+        "name": "To do",
+        "fill": "#E1F5EE",
+        "edge": "#0F6E56",
+        "ink": "#085041"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "id": "1",
+      "name": "Pricing agreed",
+      "stage": "Live"
+    },
+    {
+      "id": "2",
+      "name": "Packaging",
+      "stage": "Live",
+      "children": [
+        {
+          "id": "2a",
+          "name": "Barcode approval",
+          "stage": "Live",
+          "before_golive": true
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Stock in the warehouse",
+      "stage": "Blocked",
+      "children": [
+        {
+          "id": "3a",
+          "name": "Customs papers",
+          "stage": "Blocked",
+          "before_golive": true
+        },
+        {
+          "id": "3b",
+          "name": "Second shipment",
+          "stage": "To do",
+          "before_golive": false
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Website page",
+      "stage": "Building"
+    },
+    {
+      "id": "5",
+      "name": "Press note",
+      "stage": "To do",
+      "children": [
+        {
+          "id": "5a",
+          "name": "Photos",
+          "stage": "To do",
+          "before_golive": true
+        }
+      ]
+    }
+  ]
+}

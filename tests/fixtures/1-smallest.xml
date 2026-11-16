@@ -1,0 +1,5 @@
+<fishbone version="1" title="Kitchen refit" golive="Kitchen in use">
+  <step id="1" name="Agree the layout" stage="Live"/>
+  <step id="2" name="Order the units" stage="Building"/>
+  <step id="3" name="Fit and connect" stage="To do"/>
+</fishbone>

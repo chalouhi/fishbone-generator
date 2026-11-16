@@ -1,0 +1,10 @@
+{
+  "fishbone": 1,
+  "title": "Broken example",
+  "steps": [
+    { "id": "1", "name": "First step", "stage": "Live" },
+    { "id": "1", "name": "Second step", "stage": "To do", "link": "javascript:alert(1)" },
+    { "id": "THREE-LONG", "stage": "Urgent",
+      "children": [ { "id": "3a", "name": "A child", "stage": "To do", "before_golive": "maybe" } ] }
+  ]
+}

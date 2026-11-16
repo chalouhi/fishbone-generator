@@ -1,0 +1,22 @@
+{
+  "fishbone": 1,
+  "title": "Kitchen refit",
+  "golive": "Kitchen in use",
+  "steps": [
+    {
+      "id": "1",
+      "name": "Agree the layout",
+      "stage": "Live"
+    },
+    {
+      "id": "2",
+      "name": "Order the units",
+      "stage": "Building"
+    },
+    {
+      "id": "3",
+      "name": "Fit and connect",
+      "stage": "To do"
+    }
+  ]
+}

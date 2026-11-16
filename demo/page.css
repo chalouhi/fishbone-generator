@@ -1,0 +1,28 @@
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;color:#1a1a1a;font-family:Calibri,"Segoe UI",system-ui,-apple-system,sans-serif;font-size:15px;line-height:1.4}
+.wrap{max-width:1280px;margin:0 auto;padding:0 15px}
+header{border-bottom:1px solid #dfe2ea;padding:14px 0 10px}
+h1{font-size:22px;margin:0 0 4px;letter-spacing:-.2px}
+.sub{margin:0;color:#5b6070;max-width:760px}
+a{color:#185FA5}
+.input{margin:16px 0 10px}
+.drop{border:2px dashed #b8c2d6;border-radius:10px;padding:18px 16px;background:#f7f8fb;display:flex;flex-wrap:wrap;gap:6px 10px;align-items:baseline}
+.drop.over{border-color:#185FA5;background:#E6F1FB}
+.drop .hint{color:#5b6070;font-size:13.5px;flex-basis:100%}
+.pick{color:#185FA5;text-decoration:underline;cursor:pointer}
+.pick input{position:absolute;width:1px;height:1px;opacity:0}
+details#pastebox{margin:10px 0 0}
+details#pastebox summary{cursor:pointer;color:#185FA5;font-weight:600;font-size:14px}
+textarea{display:block;width:100%;min-height:150px;margin:8px 0;font:12.5px/1.4 ui-monospace,Menlo,Consolas,monospace;border:1px solid #dfe2ea;border-radius:8px;padding:10px}
+.samples{margin:12px 0 0;display:flex;flex-wrap:wrap;gap:6px;align-items:center;color:#5b6070;font-size:14px}
+.btn{border:1px solid #c9cfdb;background:#fff;border-radius:8px;padding:7px 12px;font:inherit;font-size:13.5px;font-weight:600;cursor:pointer;color:#1a1a1a}
+.btn:hover:not(:disabled){background:#f2f4f8}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.btn.sample{padding:4px 10px;font-weight:500}
+.tools{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:14px 0 12px;padding-top:12px;border-top:1px solid #dfe2ea}
+.status{color:#5b6070;font-size:13.5px}
+.out{min-height:40px}
+footer{color:#5b6070;font-size:13.5px;border-top:1px solid #dfe2ea;margin-top:30px;padding-top:6px;padding-bottom:30px}
+code{font-size:12.5px;background:#f2f4f8;border-radius:4px;padding:1px 4px;overflow-wrap:anywhere}
+@media (max-width:600px){.wrap{padding:0 8px}h1{font-size:19px}}

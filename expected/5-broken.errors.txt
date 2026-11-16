@@ -1,0 +1,7 @@
+The go-live name ("golive") is missing.
+Step 2 (id "1"): this id is used more than once. Every id must be different.
+Step 2 (id "1"): the link must start with https:// or http://.
+Step 3 (id "THREE-LONG"): the id is 10 characters; the limit is 5.
+Step 3 (id "THREE-LONG"): the name is missing.
+Step 3 (id "THREE-LONG"): the stage "Urgent" is not defined. Defined: To do, Building, Live.
+Step 3, child 1 (id "3a"): "before_golive" must be true or false.
